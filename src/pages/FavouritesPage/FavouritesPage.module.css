@@ -4,13 +4,16 @@
   justify-content: center;
   flex-direction: column;
   padding-left: 28px;
+  padding-right: 28px;
 }
 
 .favourites_title {
   font-weight: 600;
   font-size: 20px;
+  text-align: center;
   line-height: 1.2;
   color: var(--main);
+  margin-bottom: 20px;
 }
 
 .favourites_list {

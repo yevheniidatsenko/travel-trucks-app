@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { selectFavourites } from "../../redux/favourites/selectors";
 import { selectTrucks } from "../../redux/truck/selectors";
 import TruckList from "../../components/TruckList/TruckList";
-import css from "./FavouritesPage.css";
+import css from "./FavouritesPage.module.css";
 
 const FavouritesPage = () => {
   const favourites = useSelector(selectFavourites);
