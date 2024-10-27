@@ -55,7 +55,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--main);
+  color: var(--gray);
 }
 
 .icon {
@@ -110,6 +110,13 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--main);
+  padding: 5px;
+}
+
+.group_wrapper svg {
+  margin-bottom: 8px;
+  width: 32px;
+  height: 32px;
 }
 
 .group_wrapper input[type="checkbox"],

@@ -12,7 +12,7 @@ const Features = ({ truck }) => {
     },
     { key: "kitchen", label: "Kitchen", svg: "cup" },
     { key: "ac", label: "AC", svg: "wind" },
-    { key: "bathroom", label: "Bathroom", svg: "water" },
+    { key: "bathroom", label: "Bathroom", svg: "shower" },
     { key: "tv", label: "TV", svg: "tv" },
     { key: "radio", label: "Radio", svg: "radio" },
     { key: "gas", label: "Gas", svg: "gas" },

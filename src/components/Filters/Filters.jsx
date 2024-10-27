@@ -35,7 +35,7 @@ const Filters = () => {
                 className={css.input_location}
                 name="location"
                 type="text"
-                placeholder="City"
+                placeholder="City, Country"
               />
               <svg className={css.icon} width="20" height="20">
                 <use href={`${icons}#gray-map`} />
@@ -92,7 +92,7 @@ const Filters = () => {
                 <Field type="checkbox" name="features" value="bathroom" />
                 <p>
                   <svg width="20" height="30">
-                    <use href={`${icons}#water`} />
+                    <use href={`${icons}#shower`} />
                   </svg>
                   Bathroom
                 </p>

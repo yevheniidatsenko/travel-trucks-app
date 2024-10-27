@@ -24,7 +24,7 @@ const TruckItem = ({ truck }) => {
           className={css.photo}
           src={truck.gallery[0].thumb}
           width="292"
-          alt={truck.name}
+          alt={`Image of ${truck.name}`}
         />
       )}
       <div className={css.info_wrapper}>
@@ -33,11 +33,11 @@ const TruckItem = ({ truck }) => {
           <div className={css.favourite_wrapper}>
             <p>{`€ ${Number(truck.price).toFixed(2)}`}</p>
             <svg
+              className={css.iconClickable}
               width="26"
               height="24"
               onClick={handleToggleFavourite}
               fill={isFavourite ? "#e44848" : "#101828"}
-              style={{ cursor: "cursor-pointer" }}
             >
               <use href={`${icons}#black-heart`} />
             </svg>
@@ -86,7 +86,8 @@ TruckItem.propTypes = {
     rating: PropTypes.number,
     reviews: PropTypes.arrayOf(
       PropTypes.shape({
-        length: PropTypes.number,
+        rating: PropTypes.number,
+        text: PropTypes.string,
       })
     ).isRequired,
     description: PropTypes.string,
