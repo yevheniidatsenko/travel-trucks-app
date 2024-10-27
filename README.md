@@ -13,12 +13,19 @@ Welcome to **Travel Trucks Rental**—your go-to spot for booking awesome travel
 
 ## Technical Specifications
 
-- **Travel Truck Card**: Snazzy card layout for showcasing travel truck rental options.
-- **Pagination**: View 4 fabulous ads per page. Hit "Load More" for more options.
-- **Favorites**: Save your favorites by clicking the heart-shaped button, which changes color to show your preferred trucks.
-- **Persistence**: Your favorite trucks stay saved even after refreshing the page.
-- **Travel Truck Details**: Click "Show More" for an in-depth look at each camper.
-- **Booking Form**: Ready to book? Fill out the form with your name, email, and booking date, then hit submit!
+- **Travel Truck Display Card**: Showcases each travel truck rental option in an attractive card design, enhancing visual appeal and user interaction.
+- **Pagination**: Displays four eye-catching advertisements per page. Users can explore additional options by clicking the "Load More" button.
+- **Favorites Feature**: Users can bookmark their preferred travel trucks by clicking the heart icon, which changes color to indicate their favorites.
+- **Data Persistence**: Favorites are retained across browser sessions, ensuring users' selections are saved even after refreshing the page.
+- **Detailed Truck Information**: Provides in-depth details for each travel truck through a "Show More" button, facilitating better user decision-making.
+- **Reservation Form**: Allows users to book their chosen truck by filling out a form with their name, email, and booking date, followed by submitting it to secure their reservation.
+
+## How to Use
+
+1. **Explore Options**: Browse the catalog to view various travel truck options.
+2. **Bookmark Favorites**: Click the heart icon on any truck card to add it to your favorites.
+3. **Learn More**: For more detailed information about a truck, click the "Show More" button on any truck card.
+4. **Book Your Truck**: From the truck's detailed page, fill in the reservation form and hit submit to finalize your booking.
 
 ## Technologies Used
 
@@ -43,7 +50,6 @@ Routes include:
 - `/`: Home page with a general overview.
 - `/catalog`: Displays various campers.
 - `/favorites`: Shows user-saved advertisements.
-- _Redirects to home page for non-existent routes._
 
 ## Layout
 
