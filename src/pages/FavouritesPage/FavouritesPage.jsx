@@ -1,15 +1,19 @@
 import { useSelector } from "react-redux";
+import { useMemo } from "react";
 import { selectFavourites } from "../../redux/favourites/selectors";
 import { selectTrucks } from "../../redux/truck/selectors";
 import TruckList from "../../components/TruckList/TruckList";
 import css from "./FavouritesPage.module.css";
 
 const FavouritesPage = () => {
-  const favourites = useSelector(selectFavourites);
-  const allTrucks = useSelector(selectTrucks);
+  const { favourites, allTrucks } = useSelector((state) => ({
+    favourites: selectFavourites(state),
+    allTrucks: selectTrucks(state),
+  }));
 
-  const favouriteTrucks = allTrucks.filter((truck) =>
-    favourites.includes(truck.id)
+  const favouriteTrucks = useMemo(
+    () => allTrucks.filter((truck) => favourites.includes(truck.id)),
+    [allTrucks, favourites]
   );
 
   return (
